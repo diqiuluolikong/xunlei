@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    perspective: 800px;
+
+}
+
+p{
+    display: block;
+    padding-top: 100px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 14px;
+    animation: goa 10s infinite;
+}
+
+@keyframes goa {
+    50%{ font-size: 90px }
+    100%{ }
+}
+
+h1{
+    transform-style: preserve-3d;
+    display: block;
+    color: black;
+    padding-top: 100px;
+    margin-top: 50px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 50px;
+    animation: goh 10s infinite;
+}
+
+@keyframes goh {
+    50%{transform: rotateX(360deg);color: brown;}
+    100%{transform: rotateZ(360deg);color: blue}
+}
+
+div{
+    position: absolute;
+    left: 29%;
+    top: 40vh;
+    display: block;
+    width: 600px;
+    height: 30px;
+    animation: gosp 4s infinite linear
+}
+
+span{
+    position: absolute;
+    display: block;
+    left: -80px;
+    width: 160px;
+    height: 30px;
+    text-align: center;
+    font-size: 30px;
+    transform: rotateZ(270deg);
+}
+
+
+@keyframes gosp {
+    20%{color: plum}
+    40%{color: gold}
+    50%{color: blue}
+    60%{color: red}
+    80%{color: aqua}
+    100%{transform: rotateZ(360deg);color: black}
+}
