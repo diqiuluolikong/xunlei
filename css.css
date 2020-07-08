@@ -1,74 +1,158 @@
-*{
+* {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
-body{
-    perspective: 800px;
-
-}
-
-p{
-    display: block;
-    padding-top: 100px;
+.nav_header {
     width: 100%;
-    height: 100%;
+    height: 68px;
+    color: transparent;
+}
+
+._header_bg {
+    width: 100%;
+    height: 431px;
+    background: url("../img/about-bg.jpg") no-repeat center;
+    background-size: cover;
+}
+
+
+._header_bg h2 {
+    font-size: 44px;
+    margin: 132px;
     text-align: center;
+    color: white;
+    font-weight: normal;
+}
+
+._nav_header {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+._title_nav {
+    background-color: transparent;
+    transition: all 0.2s;
+    position: sticky;
+    top: 0;
+}
+
+._title_nav:hover {
+    background-color: black;
+}
+
+._nav_header img {
+    margin: 14px auto;
+}
+
+._nav_header .nav {
+    list-style: none;
+    float: right;
+    margin: auto 0;
+}
+
+.nav li {
+    display: inline-block;
+    margin-left: 20px;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom-color 0.2s;
+}
+
+.nav li:hover {
+    border-bottom: 2px solid white;
+}
+
+.nav li a {
+    color: #E0E0E0;
+    text-decoration: none;
+    line-height: 68px;
+    padding: 0 10px;
+    display: inline-block;
     font-size: 14px;
-    animation: goa 10s infinite;
 }
 
-@keyframes goa {
-    50%{ font-size: 90px }
-    100%{ }
+._border {
+    max-width: 1200px;
+    margin: 10px auto auto;
 }
 
-h1{
-    transform-style: preserve-3d;
-    display: block;
-    color: black;
-    padding-top: 100px;
-    margin-top: 50px;
+._border h3 {
+    font-size: 24px;
+    margin-top: 60px;
+}
+
+._border p {
+    margin-top: 30px;
+    text-indent: 30px;
+    line-height: 1.8;
+    color: darkgray;
+}
+
+.want {
+    margin-top: 60px;
+}
+
+._end_bg {
+    background-color: black;
     width: 100%;
-    height: 100%;
-    text-align: center;
-    font-size: 50px;
-    animation: goh 10s infinite;
+    padding-top: 10px;
+    margin-top: 60px;
+    padding-bottom: 60px;
 }
 
-@keyframes goh {
-    50%{transform: rotateX(360deg);color: brown;}
-    100%{transform: rotateZ(360deg);color: blue}
+._end_nav {
+    display: inline-block;
+    list-style: none;
+    width: 100%;
+    border-bottom: 1px solid #333333;
+    margin-top: 20px;
 }
 
-div{
-    position: absolute;
-    left: 29%;
-    top: 40vh;
-    display: block;
-    width: 600px;
-    height: 30px;
-    animation: gosp 4s infinite linear
+._end_nav ul {
+    float: left;
+    padding-bottom: 16px;
 }
 
-span{
-    position: absolute;
-    display: block;
-    left: -80px;
-    width: 160px;
-    height: 30px;
-    text-align: center;
-    font-size: 30px;
-    transform: rotateZ(270deg);
+._end_nav li {
+    display: inline-block;
+    margin-right: 36px;
 }
 
+._end_nav li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 16px;
+    display: inline-block;
+}
 
-@keyframes gosp {
-    20%{color: plum}
-    40%{color: gold}
-    50%{color: blue}
-    60%{color: red}
-    80%{color: aqua}
-    100%{transform: rotateZ(360deg);color: black}
+._end_msg {
+    margin-top: 20px;
+}
+
+._end_msg p {
+    color: gray;
+    font-size: 12px;
+    margin: 0 auto;
+}
+
+._end_nav_img {
+    float: right;
+}
+
+._end_nav_img a {
+    display: inline-block;
+    width: 20px;
+    height: 16px;
+    margin: auto 10px;
+}
+
+._end_nav_img ._wechat {
+    background-image: url("../img/spr_common.png");
+    background-position: -225px -175px;
+}
+
+._end_nav_img ._weibo {
+    background-image: url("../img/spr_common.png");
+    background-position: -195px -142px;
 }
