@@ -12,7 +12,7 @@
 ._header_bg {
     width: 100%;
     height: 431px;
-    background: url("../img/about-bg.jpg") no-repeat center;
+    background: url("img/about-bg.jpg") no-repeat center;
     background-size: cover;
 }
 
@@ -148,11 +148,11 @@
 }
 
 ._end_nav_img ._wechat {
-    background-image: url("../img/spr_common.png");
+    background-image: url("img/spr_common.png");
     background-position: -225px -175px;
 }
 
 ._end_nav_img ._weibo {
-    background-image: url("../img/spr_common.png");
+    background-image: url("img/spr_common.png");
     background-position: -195px -142px;
 }
